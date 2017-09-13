@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C06C95221F68D69D00C441D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95211F68D69D00C441D3 /* AppDelegate.swift */; };
-		C06C95241F68D69D00C441D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95231F68D69D00C441D3 /* ViewController.swift */; };
+		C06C95241F68D69D00C441D3 /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95231F68D69D00C441D3 /* BucketListViewController.swift */; };
 		C06C95271F68D69D00C441D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06C95251F68D69D00C441D3 /* Main.storyboard */; };
 		C06C95291F68D69D00C441D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06C95281F68D69D00C441D3 /* Assets.xcassets */; };
 		C06C952C1F68D69D00C441D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06C952A1F68D69D00C441D3 /* LaunchScreen.storyboard */; };
 		C06C95371F68D69E00C441D3 /* BucketList2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95361F68D69E00C441D3 /* BucketList2Tests.swift */; };
 		C06C95421F68D69E00C441D3 /* BucketList2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95411F68D69E00C441D3 /* BucketList2UITests.swift */; };
+		C06C95501F68D74200C441D3 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C954F1F68D74200C441D3 /* AddItemTableViewController.swift */; };
+		C06C95521F68EFFD00C441D3 /* AddItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C95511F68EFFD00C441D3 /* AddItemDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		C06C951E1F68D69D00C441D3 /* BucketList2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C95211F68D69D00C441D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C06C95231F68D69D00C441D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C06C95231F68D69D00C441D3 /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
 		C06C95261F68D69D00C441D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06C95281F68D69D00C441D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06C952B1F68D69D00C441D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		C06C953D1F68D69E00C441D3 /* BucketList2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketList2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C95411F68D69E00C441D3 /* BucketList2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList2UITests.swift; sourceTree = "<group>"; };
 		C06C95431F68D69E00C441D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06C954F1F68D74200C441D3 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		C06C95511F68EFFD00C441D3 /* AddItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				C06C95211F68D69D00C441D3 /* AppDelegate.swift */,
-				C06C95231F68D69D00C441D3 /* ViewController.swift */,
 				C06C95251F68D69D00C441D3 /* Main.storyboard */,
+				C06C95231F68D69D00C441D3 /* BucketListViewController.swift */,
+				C06C954F1F68D74200C441D3 /* AddItemTableViewController.swift */,
+				C06C95511F68EFFD00C441D3 /* AddItemDelegate.swift */,
 				C06C95281F68D69D00C441D3 /* Assets.xcassets */,
 				C06C952A1F68D69D00C441D3 /* LaunchScreen.storyboard */,
 				C06C952D1F68D69D00C441D3 /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06C95241F68D69D00C441D3 /* ViewController.swift in Sources */,
+				C06C95241F68D69D00C441D3 /* BucketListViewController.swift in Sources */,
 				C06C95221F68D69D00C441D3 /* AppDelegate.swift in Sources */,
+				C06C95501F68D74200C441D3 /* AddItemTableViewController.swift in Sources */,
+				C06C95521F68EFFD00C441D3 /* AddItemDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
